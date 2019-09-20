@@ -56,6 +56,38 @@ __Ошибку второго рода__ иногда называют *проп
     <img src="images/extra.jpg" alt="">
 </details>
 
-Напомню, что __линейная регрессия__ - это метод восстановления зависимости между двумя переменными. Её оптимизация сводится к [максимизации прадоподобия](https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%B0%D0%B2%D0%B4%D0%BE%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D1%8F), что эквивалентно минимизации среднеквадратичной ошибки (MSE), которая широко используется в реальных задачах.
-![](images/vector_mse.jpg)
+Напомню, что __линейная регрессия__ - это метод восстановления зависимости между двумя переменными. Её оптимизация сводится к [максимизации прадоподобия](https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%B0%D0%B2%D0%B4%D0%BE%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D1%8F), что эквивалентно минимизации среднеквадратичной ошибки (MSE), которая широко используется в реальных задачах.  
+
+![](images/vector_mse.JPG)
+
+
+### Виды метрик машинного обучения?
+(*я так понимаю речь идет о метриках качества*)    
+![](images/score.jpg)  
+За шпорами [сюда](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-supervised-learning) и [сюда](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-unsupervised-learning) 
+
+  __Классификация:__
+  * accuracy
+  * precision 
+  * recall
+  * F-measure
+  * AUC-ROC и AUC-PR
+  * Logistic Loss (*Данная метрика нечасто выступает в бизнес-требованиях, но часто — в задачах на kaggle. [Крутая статья](https://dyakonov.org/2018/03/12/%d0%bb%d0%be%d0%b3%d0%b8%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b0%d1%8f-%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d1%8f-%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b8/#more-6139)*   
+  
+  __Регрессия__  
+  * MSE
+  * R<sup><small>2</small></sup> ([Коэффициент детерминации](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82_%D0%B4%D0%B5%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8))
+  * MAE
+  * Квантильная ошибка (*нормальных мануалов не нашел, в двух словах - сильнее штрафует за недопрогноз, чем за перепрогноз)
+  
+  __Кластеризация__ (*почитать можно [тут](https://habr.com/ru/company/ods/blog/325654/)
+  * Adjusted Rand Index (ARI)
+  * Adjusted Mutual Information (AMI)
+  * Homogenity
+  * Completeness
+  * V-measure
+  * Silhouette
+
+### Как объяснить бизнесу метрику машинного обучения?
+
 
